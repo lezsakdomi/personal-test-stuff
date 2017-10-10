@@ -1,5 +1,5 @@
 language: generic
-script: make
-after-success:
+script:
+  - make
   - git add somefile
   - git push
