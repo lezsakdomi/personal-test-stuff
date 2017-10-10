@@ -10,4 +10,4 @@ before_install:
 script:
   - make
   - git add somefile
-  - git push origin HEAD:$TRAVIS_BRANCH
+  - git push git@github.com:$TRAVIS_REPO_SLUG.git HEAD:$TRAVIS_BRANCH
