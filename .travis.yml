@@ -1,2 +1,5 @@
 language: generic
 script: make
+after-success:
+  - git add somefile
+  - git push
