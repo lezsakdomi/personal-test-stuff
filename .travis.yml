@@ -9,5 +9,5 @@ before_install:
 
 script:
   - make
-  - git add somefile
+  - git add somefile && git commit -a -m "Generate somefile"
   - git push git@github.com:$TRAVIS_REPO_SLUG.git HEAD:$TRAVIS_BRANCH
